@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<http lang="en">
+
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- CSS Customization-->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <title>IO Demo</title>
+    </head>
+
+    <body>
+        <header class="top-nav navbar navbar-expand flex-column flex-lg-row navbar-dark"><a class="navbar-brand" href="/"><img class="header-img" src="https://www.friendshipcircle.org/wp-content/uploads/2016/09/fake-logo.png">  Sample Dashboard</a>
+            <div class="navbar-nav-scroll d-flex ml-lg-auto">
+                <ul class="navbar-nav flex-column flex-sm-row text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Website</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Knowledgebase</a></li>
+                    <li class="nav-item dropdown"><a class="nav-item nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-right text-center"><a class="dropdown-item" href="#">Account Settings</a><a class="dropdown-item" href="#">Billing History</a><a class="dropdown-item" href="#">Contact Support</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Sign out</a></div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+                <!-- Sidebar navigation-->
+                <div class="col-12 col-md-auto io-sidebar">
+                    <nav class="nav flex-column text-center text-md-left justify-center justify-md-left">
+                        <!--Commission a Report--><a class="btn btn-primary btn-sm com-proj-button" href="#" role="Button">Commission Project</a><a class="nav-item nav-link" href="/">User Dashboard</a>
+                        <!-- Active Projects-->
+                        <li class="nav-item"><a class="dropdown-toggle nav-link" data-toggle="collapse" href="#activeProjects" role="button" aria-expanded="false" aria-controls="activeProjects">Active Projects</a>
+                            <div class="collapse show" id="activeProjects"><a class="dropdown-item" href="/project?title=Alpha%20Inc.">Alpha Inc.</a><a class="dropdown-item" href="/project?title=Beta%20Corp.">Beta Corp.</a><a class="dropdown-item" href="/project?title=Gamma%20Group">Gamma Group</a></div>
+                        </li>
+                        <!--Archived Projects    -->
+                        <li class="nav-item"><a class="dropdown-toggle nav-link" data-toggle="collapse" href="#archivedProjects" role="button" aria-expanded="false" aria-controls="archivedProjects">Archived Projects</a>
+                            <div class="collapse" id="archivedProjects"><a class="dropdown-item" href="#">Microsoft</a><a class="dropdown-item" href="#">Apple</a><a class="dropdown-item" href="#">Google</a></div>
+                        </li>
+                    </nav>
+                </div>
+                <!-- Main content area-->
+                <div class="main-content col">
+                    <!--Main content-->
+                    <!--Main content top tabs-->
+                    <h2 class="text-center">Project title</h2>
+                    <!--Dropdown menu for small displays--><a class="dropdown-toggle nav-link d-sm-none text-center" data-toggle="collapse" href="#smallProjectTabs" role="button" aria-expanded="false" aria-controls="smallProjectTabs">Project Tabs</a>
+                    <div class="collapse text-center" id="smallProjectTabs"><a class="dropdown-item" href="#">Project Dashboard</a><a class="dropdown-item" href="#">Individuals</a><a class="dropdown-item" href="#">Teams</a><a class="dropdown-item" href="#">Organization</a></div>
+                    <!--Tabbed menu for sm+ size screens-->
+                    <nav class="nav nav-tabs justify-content-center collapse d-none d-sm-flex"><a class="nav-item nav-link" href="#">Project Dashboard</a><a class="nav-item nav-link active" href="#">Individuals</a><a class="nav-item nav-link" href="#">Teams</a><a class="nav-item nav-link" href="#">Organization</a></nav>
+                    <h1>Project title</h1>
+                    <p>Welcome to Project title</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p style="text-align: center;">&copy; 2018 Simon Lutterbie</p>
+    </footer>
+</http>

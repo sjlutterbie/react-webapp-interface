@@ -1,0 +1,12 @@
+{
+    "name": "react-webapp-interface",
+    "version": "0.1.0",
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "dev": "concurrently --kill-others-on-fail \"yarn client\" && \"yarn server\""
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.0"
+    }
+}
