@@ -1,0 +1,48 @@
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0,51,117,.9);
+
+}
+
+  .header-img {
+    padding: 5px;
+    height: 75px;
+  }
+
+footer {
+ height: 5vh;
+ min-height: 20px;
+ color: #fff;
+ background: rgba(0,51,117,.9);
+ border-top: 1px solid #ccc;
+}
+
+.io-sidebar {
+  background: #fff;
+  border-right: 1px solid #ccc;
+}
+
+  /* Prevent "Commission Project" button from taking full width */
+  .com-proj-button {
+    margin: auto;
+    max-width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+.main-content {
+  background: #fff;
+  height: 85vh;
+  border-top: 1px solid #ccc;
+}
+
+.top-nav{
+  background: rgba(0,51,117,.9);
+}
