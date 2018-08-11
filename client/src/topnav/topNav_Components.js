@@ -1,8 +1,17 @@
 import React from 'react';
+import mB from '../shared/menuBuilder';
 
 class Header extends React.Component {
-    
+
     render() {
+        
+        var dropDownItems = {
+        "Account settings": "#",
+        "Billing history": "#",
+        "Contact support": "#",
+        "Sign out": "#"
+    };
+        
         return (
             <header
                 className="top-nav navbar navbar-expand 
@@ -17,32 +26,10 @@ class Header extends React.Component {
                 </a>
                 <div className="navbar-nav-scroll d-flex ml-lg-auto">
                     <ul className="navbar-nav flex-column flex-sm-row text-center">
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Website</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Research</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Knowledgebase</a>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <a  className="nav-item nav-link dropdown-toggle"
-                                href="#"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >Account
-                            </a>
-                            <div className="dropdown-menu dropdown-menu-right
-                                            dropdown-menu-right text-center">
-                                <a className="dropdown-item" href="#">Account Settings</a>
-                                <a className="dropdown-item" href="#">Billing History</a>
-                                <a className="dropdown-item" href="#">Contact Support</a>
-                                <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">Sign out</a>
-                            </div>
-                        </li>
+                            {mB.createMenuLink("Website", "#")}
+                            {mB.createMenuLink("Research", "#")}
+                            {mB.createMenuLink("Knowledgebase", "#")}
+                            {mB.createDropDownMenu("Account", dropDownItems)}
                     </ul>
                 </div>
                 
